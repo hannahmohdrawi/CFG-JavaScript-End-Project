@@ -1,0 +1,156 @@
+<body>
+
+    <h1 id="welcome-message">Welcome!</h1>
+    <form id="name-form">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+  <p id="greeting"></p>
+    
+    <h1>Hot Buns</h1>
+    <div class="image-container">
+      <img src="https://img.freepik.com/premium-vector/cute-little-kid-burger-cartoon-vector-icon-illustration-food-education-icon-concept-isolated-2d-flat_979150-23.jpg?w=740">
+    </div>
+    <div class="burger-builder-container">
+        <h2>Create your own burger</h2>
+        <div class="protein">
+            <h3>Protein</h3>
+        
+            <div>
+                <input type="radio" class="radioBtn" value="single-beef">
+                <label for="single-beef"> Single Beef Patty</label>
+            </div>
+
+
+            <div>
+                <input type="radio" class="radioBtn" value="double-beef">
+                <label for="double-beef"> Double Beef Patty</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="chicken">
+                <label for="chicken"> Chicken Patty</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="veggie">
+                <label for="veggie"> Veggie Patty</label>
+            </div>
+
+            <div>
+                <input type="radio" value="custom" class="customRadioButton">
+                <label for="protein"> Add custom items</label>
+            </div>
+
+            <div>
+                <input type="textbox" class="customTextbox" id="customProtein" placeholder="Add item here">
+            </div>
+        </div>
+
+        <div class="veg">
+            <h3>Vegetables</h3>
+
+            <div>
+                <input type="radio" class="radioBtn" value="lettuce">
+                <label for="lettuce"> Lettuce</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="tomato">
+                <label for="tomato"> Tomato</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="onion">
+                <label for="onion"> Onion</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="mushroom">
+                <label for="mushroom"> Grilled Mushroom</label>
+            </div>
+
+            <div>
+                <input type="radio" value="custom" class="customRadioButton">
+                <label for="veggie"> Add custom items</label>
+            </div>
+
+            <div>
+                <input type="textbox" class="customTextbox" id="customVeg" placeholder="Add item here">
+            </div>
+            
+        </div>
+
+        <div class="sauce">
+            <h3>Sauces</h3>
+
+            <div>
+                <input type="radio" class="radioBtn" value="tomato">
+                <label for="tomato"> Tomato Ketchup</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="mayo">
+                <label for="mayo"> Mayonnaise</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="BBQ">
+                <label for="BBQ"> Smokey BBQ</label>
+            </div>
+
+            <div>
+                <input type="radio" value="custom" class="customRadioButton">
+                <label for="sauce"> Add custom items</label>
+            </div>
+
+            <div>
+                <input type="textbox" class="customTextbox" id="customSauce" placeholder="Add item here">
+            </div>
+        </div>
+
+        <div class="bun">
+            <h3>Bun</h3>
+            <div>
+                <input type="radio" class="radioBtn" value="sesame">
+                <label for="sesame"> Sesame</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="brioche">
+                <label for="brioche"> Brioche</label>
+            </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="gf">
+                <label for="gf"> Gluten free</label>
+            </div>
+
+            <div>
+                <input type="radio" value="custom" class="customRadioButton">
+                <label for="bun"> Add custom items</label>
+            </div>
+
+            <div>
+                <input type="textbox" class="customTextbox" id="customBun" placeholder="Add item here">
+            </div>
+            
+        </div>
+
+        
+            <div class="order-results">
+                <p>Your order:</p>
+                <p id="order-info"></p>
+                <p id="order-submitted" class="submitMessage"></p>
+
+            </div> <br>
+
+        <button type="submit" class="submitBtn" onclick="submitOrder()">Submit</button>
+        <button type="reset" class="resetBtn" onclick="reset()">Reset</button>
+
+
+    </div>
+    
+</body>
+</html>
